@@ -47,5 +47,12 @@ $posts = [
     ],
 ];
 
-var_dump(array_keys($posts));
+$post_keys = array_keys($posts);
+$posts_by_keys = $posts[$post_keys[$i]];
+
+for ($i=0; $i < count($posts_by_keys) ; $i++) {
+  echo $post_keys[$i];
+  var_dump($posts[$post_keys[$i]][$i]);
+}
+
 ?>

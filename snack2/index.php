@@ -15,7 +15,7 @@
   $result_age = is_int($age);
 
 //
-if ($result_name > 3 || $result_mail === true || $result_age === true) {
+if ($result_name > 3 && $result_mail === true && $result_age === true) {
    ?>
 
    <div class="">
